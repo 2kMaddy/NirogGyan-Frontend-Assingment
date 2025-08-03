@@ -23,7 +23,7 @@ const DoctorDetail: React.FC = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:4000/api/get-doctor/${doctorId}`
+        `https://niroggyan-frontend-assingment.onrender.com/api/get-doctor/${doctorId}`
       );
       const { data } = await response.json();
       setDoctor(data);

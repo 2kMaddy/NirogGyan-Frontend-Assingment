@@ -16,7 +16,7 @@ const DoctorsList: React.FC = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        "http://localhost:4000/api/get-doctors-list"
+        "https://niroggyan-frontend-assingment.onrender.com/api/get-doctors-list"
       );
       const { data } = await response.json();
       console.log(data);
