@@ -49,7 +49,7 @@ const DoctorsList: React.FC = () => {
 
             <div className="md:w-1/2 mt-6 md:mt-0">
               <img
-                src="src/assets/doctor-nurses.png"
+                src="https://res.cloudinary.com/dhavsxxnd/image/upload/v1754239546/doctor-nurses_su0xqr.png"
                 alt="Banner"
                 className="w-full h-auto object-cover rounded-xl"
               />
