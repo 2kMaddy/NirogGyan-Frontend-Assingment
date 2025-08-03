@@ -1,55 +1,88 @@
-# NirogGyan-Frontend-Assingment
+# 🏥 HealthCare – Doctor Consultation Booking
 
-🏥 HealthCare – Doctor Consultation Booking
-===========================================
+HealthCare is a **full-stack web application** that allows users to **book doctors for consultations** based on real-time availability.  
+It provides a **responsive and modern UI**, **real-time availability checking**, and **securely stores doctor and booking data**.
 
-HealthCare is a web application that allows users to **book doctors for consultations** based on their **availability**.It provides a **responsive and modern UI**, **real-time availability checking**, and stores **doctor details** in a secure database.
+---
 
-🚀 Features
------------
+## 🚀 Features
 
-*   📅 **Book Doctors by Availability** – Check real-time available slots.
-    
-*   👨‍⚕️ **Doctor Profiles** – View specialization, consultation fees, and availability.
-    
-*   💾 **Data Storage** – Store doctor data and booking info in **MongoDB**.
-    
-*   🎨 **Responsive UI** – Built with **Tailwind CSS** for a clean and modern interface.
-    
-*   ⚡ **Fast Backend** – **Express.js** handles API requests efficiently.
-    
-*   🌐 **Full Stack** – **React** for frontend, **Node.js** for runtime.
-    
+- **📅 Book Doctors by Availability** – Check **real-time available slots** and book instantly.
+- **👨‍⚕️ Doctor Profiles** – View **specialization, consultation fees, and availability**.
+- **💾 Data Storage** – Store doctor and booking information in **MongoDB** securely.
+- **🎨 Responsive UI** – Built with **Tailwind CSS** for a clean and modern interface.
+- **⚡ Fast Backend** – **Express.js** efficiently handles API requests.
+- **🌐 Full Stack** – **React + Node.js** with TypeScript for type safety.
 
-🛠️ Tech Stack
---------------
+---
 
-**Frontend:**
+## 🛠️ Tech Stack
 
-*   React (Vite or CRA)
-    
-*   Tailwind CSS (for styling)
-    
+### **Frontend**
+- ⚛️ **React** (Vite / CRA)
+- 🎨 **Tailwind CSS** (for modern UI styling)
+- ⌨️ **TypeScript** (for type safety)
 
-**Backend:**
+### **Backend**
+- 🟢 **Node.js** (Runtime)
+- 🚏 **Express.js** (Backend Framework)
+- ⌨️ **TypeScript** (for type-safe backend development)
 
-*   Node.js (Runtime)
-    
-*   Express.js (Backend Framework)
-    
+### **Database**
+- 🍃 **MongoDB** (Database)
+- 🐍 **Mongoose** (ODM for MongoDB)
 
-**Database:**
+---
 
-*   MongoDB (Mongoose for ODM)
-    
+## 📂 Folder Structure
 
-📂 Folder Structure
--------------------
-
-### **Backtend Folder Structure**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   backend/  │  ├─ node_modules/  ├─ src/  │   ├─ models/  │   │   └─ Doctor.ts  │   ├─ routes/  │   │   └─ index.ts  │   ├─ app.ts  │   ├─ controllers.ts  │   ├─ dbConnection.ts  │   └─ index.ts  ├─ .env  ├─ package-lock.json  ├─ package.json  ├─ tsconfig.json   `
+### **Backend Folder Structure**
+```
+backend/
+├─ node_modules/
+├─ src/
+│ ├─ models/
+│ │ └─ Doctor.ts
+│ ├─ routes/
+│ │ └─ index.ts
+│ ├─ app.ts
+│ ├─ controllers.ts
+│ ├─ dbConnection.ts
+│ └─ index.ts
+├─ .env
+├─ package-lock.json
+├─ package.json
+├─ tsconfig.json
+```
 
 ### **Frontend Folder Structure**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   frontend/  │  ├─ node_modules/  ├─ public/  │  ├─ src/  │   ├─ assets/                   # Images, icons, static assets  │   │  │   ├─ components/               # Reusable UI components  │   │   ├─ DateTimeSlots.tsx  │   │   ├─ DoctorCard.tsx  │   │   ├─ Navbar.tsx  │   │   └─ SuccessMessage.tsx  │   │  │   ├─ pages/                    # Page-level components  │   │   ├─ DoctorDetail.tsx  │   │   ├─ DoctorsList.tsx  │   │   └─ PatientForm.tsx  │   │  │   ├─ types/                    # TypeScript interfaces/types  │   │   └─ index.ts  │   │  │   ├─ App.tsx                   # Root React component  │   ├─ counter.ts                # Sample or utility component  │   ├─ main.tsx                  # App entry for React  │   ├─ index.css                  # Global styles  │   └─ vite-env.d.ts             # Vite TypeScript support  │  ├─ index.html  ├─ package.json  ├─ eslint.config.js  └─ .gitignore   `
+```
+frontend/
+│
+├─ node_modules/
+├─ public/
+│
+├─ src/
+│ ├─ assets/ # Images, icons, static assets
+│ ├─ components/ # Reusable UI components
+│ │ ├─ DateTimeSlots.tsx
+│ │ ├─ DoctorCard.tsx
+│ │ ├─ Navbar.tsx
+│ │ └─ SuccessMessage.tsx
+│ ├─ pages/ # Page-level components
+│ │ ├─ DoctorDetail.tsx
+│ │ ├─ DoctorsList.tsx
+│ │ └─ PatientForm.tsx
+│ ├─ types/ # TypeScript interfaces/types
+│ │ └─ index.ts
+│ ├─ App.tsx # Root React component
+│ ├─ counter.ts # Sample or utility component
+│ ├─ main.tsx # App entry for React
+│ ├─ index.css # Global styles
+│ └─ vite-env.d.ts # Vite TypeScript support
+│
+├─ index.html
+├─ package.json
+├─ eslint.config.js
+└─ .gitignore
+```
