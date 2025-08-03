@@ -77,7 +77,7 @@ const PatientForm: React.FC = () => {
     };
 
     const response = await fetch(
-      `http://localhost:4000/api/book-appointment/${id}`,
+      `https://niroggyan-frontend-assingment.onrender.com/api/book-appointment/${id}`,
       payload
     );
 
